@@ -1,11 +1,14 @@
 import React from 'react';
+
 import "./counter.css"
 
-const Buttons = () => {
+const Buttons = ({reset, edit}) => {
+
+  
   return (
     <div className='buttons-container'>
-     <button className='edit-button'>Edit</button>
-    <button className='reset-button'>Reset</button>
+     <button className='edit-button' onClick={edit}>Edit</button>
+    <button className='reset-button' onClick={reset}>Reset</button>
     </div>
   )
 }

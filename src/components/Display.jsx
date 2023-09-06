@@ -1,11 +1,13 @@
 import React from 'react'
+
 import "./counter.css"
 
-const Display = () => {
+const Display = ({count, setCount}) => {
+
   return (
     <div className='text-container'>
      <h1 className='counter-text'>
-      0
+      {count}
      </h1>
     </div>
   )
