@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./counter.css"
 
-const Display = ({count, setCount}) => {
+const Display = ({count}) => {
 
   return (
     <div className='text-container'>

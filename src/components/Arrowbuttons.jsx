@@ -27,20 +27,18 @@ const Arrowbuttons = () => {
 
   function edit(){
     const input = prompt("What do you want the count to be");
-  
-  // Check if the input is a valid number
   if (!isNaN(input)) {
-    // Convert the input to a number and set it as the new count
     const newCount = parseFloat(input);
     setCount(newCount);
   } else {
-    // Show an alert if the input is not a number
+
     alert("Not a number! Please enter a valid number.");
   }
   }
+
   return (
   <>
-    <Buttons count = {count} setCount = {setCount} reset = {reset} edit={edit}/>
+    <Buttons gireset = {reset} edit={edit}/>
     <Display count= {count} setCount = {setCount}/>
     <div className='movement-btns'>
       
